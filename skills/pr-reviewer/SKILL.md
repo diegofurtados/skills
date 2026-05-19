@@ -1,11 +1,11 @@
 ---
-name: platform-pr-reviewer
+name: pr-reviewer
 description: Collaborative PR review focused on quality, security, and best practices. Use when reviewing PRs, analysing changes, or providing code feedback. Triggers on "review pr", "code review", "review this pr", "check this code", "review changes", "provide feedback", or any request to review a pull request.
 ---
 
 # PR Reviewer Skill
 
-This skill provides collaborative, learning-focused code reviews for Chainalysis platform PRs.
+This skill provides collaborative, learning-focused code reviews for PRs.
 
 **Philosophy:** Reviews are a learning opportunity for everyone - reviewer and author. The goal is to share knowledge, discuss alternatives, and improve together, not just to gatekeep or block changes.
 
@@ -652,8 +652,7 @@ Check if they're up to date with codebase:
 ```
 📚 Skill/Doc Update Check
 
-This changes [component], but I found references in:
-- skills/platform-ops/SKILL.md (example on line 45)
+This changes [component], but I found references in
 - docs/architecture.md (diagram showing old pattern)
 
 These might need updating to match the new approach.
@@ -1196,7 +1195,7 @@ Use linters. Focus on meaningful feedback. One or two style notes max.
 
 ## Integration with Other Skills & Resources
 
-### Use Platform Skills for Context
+### Use Skills for Context
 
 **Before reviewing, check relevant skills:**
 
@@ -1205,18 +1204,6 @@ Use linters. Focus on meaningful feedback. One or two style notes max.
   - Commit format
   - PR description structure
   - Size and scope rules
-
-- **`platform-git-safety`:** If PR has git operations
-  - Check for force pushes, history rewrites
-  - Verify safe git practices
-
-- **`platform-k8s-ops`:** If PR changes Kubernetes config
-  - Check for dry-run patterns
-  - Prod environment gating
-
-- **`platform-terraform-ops`:** If PR changes infrastructure
-  - Verify plan-before-apply
-  - Check for state management
 
 ### Research Before Suggesting
 
